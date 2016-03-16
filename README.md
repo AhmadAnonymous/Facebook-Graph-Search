@@ -3,40 +3,41 @@
 ##### _Guide to use the old facebook graph search and some Javascript code to generate Graph Search queries_
 # Super very important note: _This_ **IS NOT** _a hack tool, graph search results respect content privacy you will_ **NEVER** _see anything you can't normally see_
 
-#### Example query on my own profile to explain
+### Example query on my own profile to explain
 
-#####https://www.facebook.com/search/100005052378257/stories-by
+##### https://www.facebook.com/search/100005052378257/stories-by
 
 That query is formed from 4 parts
 
-First the facebook url
++ First facebook url
 
-Then /search/ to tell facebook that you are using the search
-On mobile sites of facebook e.g mbasic.facebook.com/ & m.facebook.com/  you can use /graphsearch/ alternatively
++ Then **/search/** to tell facebook that you are using the search
+On mobile sites of facebook e.g _mbasic.facebook.com/_ & _m.facebook.com/_  you can use **/graphsearch/** alternatively
 
-Then my own facebook user id which is easily found on my profile link "https://www.facebook.com/profile.php?id=100005052378257" my facebook user id is the number after "id=" and if there is other GET variables till the "&"
++ Then my own facebook user id which is easily found on my profile link "https://www.facebook.com/profile.php?id=100005052378257" my facebook user id is the number after **"id="** and if there is other GET variables till the **"&"**
 To know the facebook user id of someone with a username there is so much ways the easiest is to use an online tool to know it for example http://findmyfbid.com/
 
-the fourth part of the search query is /stories-by/ which is the graph search operator for posts I made
++ The fourth part of the search query is **/stories-by/** which is the graph search operator for posts I made
 Other possible parameters are after the second example
 
-Second example query
-https://www.facebook.com/search/100005052378257/stories-liked/2016/mar/16/date-3/stories/intersect
-*The first three parts are the same as the first example
-*The fourth part is /stories-liked/ which is the graph search operator for posts I liked
+### Second example query
+##### https://www.facebook.com/search/100005052378257/stories-liked/2016/mar/16/date-3/stories/intersect
 
-The fifth part is /2016/mar/16/date-3/ which is today's date "16 march 2016" written in the format of "/Year/First Three letter of month/Day/date-3/" followed by /date-3/ to tell facebook that you want content from that specific day 
-Alternatively you can use /date-2/ format which is "/Year/First Three letter of month/date-2/" to find content from that specific month in which case the search url would be https://www.facebook.com/search/100005052378257/stories-liked/2016/mar/date-2/stories/intersect
-Also you can use /date/ format which is "/Year/date/" to find content from that specific year in which case the search url would be https://www.facebook.com/search/100005052378257/stories-liked/2016/date/stories/intersect
++ The first three parts are the same as the first example
++ The fourth part is **/stories-liked/** which is the graph search operator for posts I liked
 
-The sixth part is /stories/ which means you are searching posts
++ The fifth part is **/2016/mar/16/date-3/** which is today's date **"16 march 2016"** written in the format of **"/Year/First Three letter of month/Day/date-3/"** followed by **/date-3/** to tell facebook that you want content from that specific day 
+Alternatively you can use **/date-2/** format which is **"/Year/First Three letter of month/date-2/"** to find content from that specific month in which case the search url would be https://www.facebook.com/search/100005052378257/stories-liked/2016/mar/date-2/stories/intersect
+Also you can use **/date/** format which is **"/Year/date/"** to find content from that specific year in which case the search url would be https://www.facebook.com/search/100005052378257/stories-liked/2016/date/stories/intersect
 
-The seventh part is /intersect which is used with multiple different parameters
++ The sixth part is **/stories/** which means you are searching posts
 
-Another example you should easily understand on your own
++ The seventh part is **/intersect** which is used with multiple different parameters
+
+#####Another example you should easily understand on your own
 https://www.facebook.com/search/100005052378257/photos-liked/2016/mar/date-2/photos/intersect
 
-#### some useful links
+### some useful links
 
 http://researchclinic.net/graph.html
 
@@ -45,7 +46,7 @@ The ultimate facebook sourcing tutorial
 [part 1] (http://thebalazs.com/2013/08/11/the_facebook_sourcing_tutorial_part1/)
 [part 2] (http://thebalazs.com/2014/12/30/the-facebook-sourcing-tutorial-part-2/)
 
-Useful Graph operators
+###Useful Graph operators
 Action 	Operator
 Liked 	/likers
 Pages named 	/str/keywords separated by %20/pages-named/
@@ -82,18 +83,18 @@ Sexuality 	/users-interested/males (or females or both)
 Combined search 	/intersect (at the end of the address) 
 
 
-use the following as templates to create queries
-Important Notes:
-1-It isn't important to read the whole document
-2-Javascript could be used for autogeneration of date specific searches
-3-javascript code must be put in a bookmark or run from browser console
-4-replace "USERID" with the user id of your choice
+### use the following as templates to create queries
+## Important Notes:
+1.It isn't important to read the whole document
+2.Javascript could be used for autogeneration of date specific searches
+3.javascript code must be put in a bookmark or run from browser console
+4.replace "USERID" with the user id of your choice
 Tip: use the replace all in your text editor
 
-Keywords to use for finding associated code
+### Keywords to use for finding associated code
 Tip: use Ctrl + F for easily traversing them
 
-JavaScript Queries:
+#### JavaScript Queries:
 Key1= Posts liked Year
 Key2= Posts liked Month
 Key3= Posts liked Day
@@ -105,7 +106,7 @@ Key8= Photos commented Month
 Key9= Posts liked Yesterday
 Note: Key9 is somewhat complicated but I use it though
 
-Just URLs
+#### Just URLs
 Key10= Female Friends
 Key11= Male Friends
 Key12= Photos liked by two users at the same time
