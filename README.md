@@ -26,8 +26,8 @@ That query is formed from 4 parts
   + The first three parts are the same as the first example
   + The fourth part is **/stories-liked/** which is the graph search operator for posts I liked
 
-  + The fifth part is **/2016/mar/16/date-3/** which is today's date **"16 march 2016"** written in the format of **"/Year/First Three letter of month/Day/date-3/"** followed by **/date-3/** to tell facebook that you want content from that specific day 
-   + Alternatively you can use **/date-2/** format which is **"/Year/First Three letter of month/date-2/"** to find content from that specific month in which case the search url would be 
+  + The fifth part is **/2016/mar/16/date-3/** which is today's date **"16 march 2016"** written in the format of **"/Year/First Three letters of month/Day/date-3/"** followed by **/date-3/** to tell facebook that you want content from that specific day 
+   + Alternatively you can use **/date-2/** format which is **"/Year/First Three letters of month/date-2/"** to find content from that specific month in which case the search url would be 
    https://www.facebook.com/search/100005052378257/stories-liked/2016/mar/date-2/stories/intersect
     + Also you can use **/date/** format which is **"/Year/date/"** to find content from that specific year in which case the search url would be https://www.facebook.com/search/100005052378257/stories-liked/2016/date/stories/intersect
 
@@ -53,7 +53,7 @@ Action |	Operator
 ------------- | -------------
 Liked |	/likers
 Pages named |	/str/keywords separated by %20/pages-named/
-Places |	+ /residents/past (or present)
+Places | /residents/past (or present)
        | /users-birth-place
        | /employer-location/ever-past (or present)
        | /place-visited
@@ -144,44 +144,19 @@ var m = date.getMonth();
 
 var mon;
 switch(m) {
-    case 0:
-        mon = "jan";
-        break;
-    case 1:
-        mon = "feb";
-        break;
-    case 2:
-        mon = "mar";
-        break;
-    case 3:
-        mon = "apr";
-        break;
-    case 4:
-        mon = "may";
-        break;
-    case 5:
-        mon = "jun";
-        break;
-    case 6:
-        mon = "jul";
-        break;
-    case 7:
-        mon = "aug";
-        break;
-    case 8:
-        mon = "sep";
-        break;
-    case 9:
-        mon = "oct";
-        break;
-    case 10:
-        mon = "nov";
-        break;
-    case 11:
-        mon = "dec";
-        break;
-    default:
-        mon = "jan";
+    case 0: mon = "jan";    break;
+    case 1: mon = "feb";    break;
+    case 2: mon = "mar";    break;
+    case 3: mon = "apr";    break;
+    case 4: mon = "may";    break;
+    case 5: mon = "jun";    break;
+    case 6: mon = "jul";    break;
+    case 7: mon = "aug";    break;
+    case 8: mon = "sep";    break;
+    case 9: mon = "oct";    break;
+    case 10: mon = "nov";   break;
+    case 11: mon = "dec";   break;
+    default: mon = "jan";
 }
 
  return 'https://www.facebook.com/search/USERID/stories-liked/'+y+'/'+mon+'/date-2/stories/intersect';
@@ -203,44 +178,19 @@ var m = date.getMonth();
 
 var mon;
 switch(m) {
-    case 0:
-        mon = "jan";
-        break;
-    case 1:
-        mon = "feb";
-        break;
-    case 2:
-        mon = "mar";
-        break;
-    case 3:
-        mon = "apr";
-        break;
-    case 4:
-        mon = "may";
-        break;
-    case 5:
-        mon = "jun";
-        break;
-    case 6:
-        mon = "jul";
-        break;
-    case 7:
-        mon = "aug";
-        break;
-    case 8:
-        mon = "sep";
-        break;
-    case 9:
-        mon = "oct";
-        break;
-    case 10:
-        mon = "nov";
-        break;
-    case 11:
-        mon = "dec";
-        break;
-    default:
-        mon = "jan";
+    case 0: mon = "jan";    break;
+    case 1: mon = "feb";    break;
+    case 2: mon = "mar";    break;
+    case 3: mon = "apr";    break;
+    case 4: mon = "may";    break;
+    case 5: mon = "jun";    break;
+    case 6: mon = "jul";    break;
+    case 7: mon = "aug";    break;
+    case 8: mon = "sep";    break;
+    case 9: mon = "oct";    break;
+    case 10: mon = "nov";   break;
+    case 11: mon = "dec";   break;
+    default: mon = "jan";
 }
    
  var d = date.getDate();
@@ -262,44 +212,19 @@ var m = date.getMonth();
 
 var mon;
 switch(m) {
-    case 0:
-        mon = "jan";
-        break;
-    case 1:
-        mon = "feb";
-        break;
-    case 2:
-        mon = "mar";
-        break;
-    case 3:
-        mon = "apr";
-        break;
-    case 4:
-        mon = "may";
-        break;
-    case 5:
-        mon = "jun";
-        break;
-    case 6:
-        mon = "jul";
-        break;
-    case 7:
-        mon = "aug";
-        break;
-    case 8:
-        mon = "sep";
-        break;
-    case 9:
-        mon = "oct";
-        break;
-    case 10:
-        mon = "nov";
-        break;
-    case 11:
-        mon = "dec";
-        break;
-    default:
-        mon = "jan";
+    case 0: mon = "jan";    break;
+    case 1: mon = "feb";    break;
+    case 2: mon = "mar";    break;
+    case 3: mon = "apr";    break;
+    case 4: mon = "may";    break;
+    case 5: mon = "jun";    break;
+    case 6: mon = "jul";    break;
+    case 7: mon = "aug";    break;
+    case 8: mon = "sep";    break;
+    case 9: mon = "oct";    break;
+    case 10: mon = "nov";   break;
+    case 11: mon = "dec";   break;
+    default: mon = "jan";
 }
 
  return 'https://www.facebook.com/search/USERID/stories-commented/'+y+'/'+mon+'/date-2/stories/intersect';
@@ -333,44 +258,19 @@ var m = date.getMonth();
 
 var mon;
 switch(m) {
-    case 0:
-        mon = "jan";
-        break;
-    case 1:
-        mon = "feb";
-        break;
-    case 2:
-        mon = "mar";
-        break;
-    case 3:
-        mon = "apr";
-        break;
-    case 4:
-        mon = "may";
-        break;
-    case 5:
-        mon = "jun";
-        break;
-    case 6:
-        mon = "jul";
-        break;
-    case 7:
-        mon = "aug";
-        break;
-    case 8:
-        mon = "sep";
-        break;
-    case 9:
-        mon = "oct";
-        break;
-    case 10:
-        mon = "nov";
-        break;
-    case 11:
-        mon = "dec";
-        break;
-    default:
-        mon = "jan";
+    case 0: mon = "jan";    break;
+    case 1: mon = "feb";    break;
+    case 2: mon = "mar";    break;
+    case 3: mon = "apr";    break;
+    case 4: mon = "may";    break;
+    case 5: mon = "jun";    break;
+    case 6: mon = "jul";    break;
+    case 7: mon = "aug";    break;
+    case 8: mon = "sep";    break;
+    case 9: mon = "oct";    break;
+    case 10: mon = "nov";   break;
+    case 11: mon = "dec";   break;
+    default: mon = "jan";
 }
  return 'https://www.facebook.com/search/USERID/photos-liked/'+y+'/'+mon+'/date-2/photos/intersect';
 
@@ -393,44 +293,19 @@ var m = date.getMonth();
 
 var mon;
 switch(m) {
-    case 0:
-        mon = "jan";
-        break;
-    case 1:
-        mon = "feb";
-        break;
-    case 2:
-        mon = "mar";
-        break;
-    case 3:
-        mon = "apr";
-        break;
-    case 4:
-        mon = "may";
-        break;
-    case 5:
-        mon = "jun";
-        break;
-    case 6:
-        mon = "jul";
-        break;
-    case 7:
-        mon = "aug";
-        break;
-    case 8:
-        mon = "sep";
-        break;
-    case 9:
-        mon = "oct";
-        break;
-    case 10:
-        mon = "nov";
-        break;
-    case 11:
-        mon = "dec";
-        break;
-    default:
-        mon = "jan";
+    case 0: mon = "jan";    break;
+    case 1: mon = "feb";    break;
+    case 2: mon = "mar";    break;
+    case 3: mon = "apr";    break;
+    case 4: mon = "may";    break;
+    case 5: mon = "jun";    break;
+    case 6: mon = "jul";    break;
+    case 7: mon = "aug";    break;
+    case 8: mon = "sep";    break;
+    case 9: mon = "oct";    break;
+    case 10: mon = "nov";   break;
+    case 11: mon = "dec";   break;
+    default: mon = "jan";
 }
    
  var d = date.getDate();
@@ -452,44 +327,19 @@ var m = date.getMonth();
 
 var mon;
 switch(m) {
-    case 0:
-        mon = "jan";
-        break;
-    case 1:
-        mon = "feb";
-        break;
-    case 2:
-        mon = "mar";
-        break;
-    case 3:
-        mon = "apr";
-        break;
-    case 4:
-        mon = "may";
-        break;
-    case 5:
-        mon = "jun";
-        break;
-    case 6:
-        mon = "jul";
-        break;
-    case 7:
-        mon = "aug";
-        break;
-    case 8:
-        mon = "sep";
-        break;
-    case 9:
-        mon = "oct";
-        break;
-    case 10:
-        mon = "nov";
-        break;
-    case 11:
-        mon = "dec";
-        break;
-    default:
-        mon = "jan";
+    case 0: mon = "jan";    break;
+    case 1: mon = "feb";    break;
+    case 2: mon = "mar";    break;
+    case 3: mon = "apr";    break;
+    case 4: mon = "may";    break;
+    case 5: mon = "jun";    break;
+    case 6: mon = "jul";    break;
+    case 7: mon = "aug";    break;
+    case 8: mon = "sep";    break;
+    case 9: mon = "oct";    break;
+    case 10: mon = "nov";   break;
+    case 11: mon = "dec";   break;
+    default: mon = "jan";
 }
  return 'https://www.facebook.com/search/USERID/photos-commented/'+y+'/'+mon+'/date-2/photos/intersect';
 
