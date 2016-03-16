@@ -18,7 +18,7 @@ That query is formed from 4 parts
   +To know the facebook user id of someone with a username there is so much ways the easiest is to use an online tool to know it for example http://findmyfbid.com/
 
 + The fourth part of the search query is **/stories-by/** which is the graph search operator for posts I made
-  +Other possible parameters are after the second example
+    + Other possible parameters are after the second example
 
 ### Second example query
 ##### https://www.facebook.com/search/100005052378257/stories-liked/2016/mar/16/date-3/stories/intersect
@@ -38,15 +38,15 @@ That query is formed from 4 parts
 #####Another example you should easily understand on your own
 https://www.facebook.com/search/100005052378257/photos-liked/2016/mar/date-2/photos/intersect
 
-### some useful links
+### Some useful links
 
   http://researchclinic.net/graph.html
 
   For other customised Graph searches see Graph.tips and http://www.intel-sw.com/blog/facebook-search/
   
   The ultimate facebook sourcing tutorial
-  +[part 1] (http://thebalazs.com/2013/08/11/the_facebook_sourcing_tutorial_part1/)
-  +[part 2] (http://thebalazs.com/2014/12/30/the-facebook-sourcing-tutorial-part-2/)
+[part 1] (http://thebalazs.com/2013/08/11/the_facebook_sourcing_tutorial_part1/)
+[part 2] (http://thebalazs.com/2014/12/30/the-facebook-sourcing-tutorial-part-2/)
 
 ###Useful Graph operators
 Action |	Operator
@@ -95,7 +95,7 @@ Combined search |	/intersect (at the end of the address)
    + Tip: use the replace tool in your text editor
 
 ### Keywords to use for finding associated code
-   +Tip: use Ctrl + F for easily traversing them
+ + Tip: use Ctrl + F for easily traversing them
 
 #### JavaScript Queries:
 + Key1= Posts liked Year
@@ -115,7 +115,7 @@ Combined search |	/intersect (at the end of the address)
 + Key12= Photos liked by two users at the same time
 + Key13= Posts liked by two users at the same time
 + Key14= Specific Page posts liked (use Page ID)
-+ Key15= Specific Page photos liked(use Page ID)
++ Key15= Specific Page photos liked (use Page ID)
   + Note: Previous four you can add date to refine search
 + Key16= See Two users friendship
   + Note: Key16 you can use facebook username instead of USERID
