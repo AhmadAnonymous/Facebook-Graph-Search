@@ -12,7 +12,7 @@ That query is formed from 4 parts
 + First facebook url
 
 + Then **/search/** to tell facebook that you are using the search
-On mobile sites of facebook e.g _mbasic.facebook.com/_ & _m.facebook.com/_  you can use **/graphsearch/** alternatively
+   + On mobile sites of facebook e.g _mbasic.facebook.com/_ & _m.facebook.com/_  you can use **/graphsearch/** alternatively
 
 + Then my own facebook user id which is easily found on my profile link "https://www.facebook.com/profile.php?id=100005052378257" my facebook user id is the number after **"id="** and if there is other GET variables till the **"&"**
   +To know the facebook user id of someone with a username there is so much ways the easiest is to use an online tool to know it for example http://findmyfbid.com/
@@ -88,14 +88,14 @@ Combined search |	/intersect (at the end of the address)
 
 ### Use the following as templates to create queries
 ## Important Notes:
-1.It isn't important to read the whole document
-2.Javascript could be used for automatic generation of date specific searches
-3.javascript code must be put in a bookmark or run from browser console
-4.replace "USERID" with the user id of your choice
-Tip: use the replace tool in your text editor
+1. It isn't important to read the whole document
+2. Javascript could be used for automatic generation of date specific searches
+3. javascript code must be put in a bookmark or run from browser console
+4. replace "USERID" with the user id of your choice
+   + Tip: use the replace tool in your text editor
 
 ### Keywords to use for finding associated code
-Tip: use Ctrl + F for easily traversing them
+   +Tip: use Ctrl + F for easily traversing them
 
 #### JavaScript Queries:
 + Key1= Posts liked Year
@@ -516,6 +516,7 @@ switch(m) {
        case 3: yd = 31; mon = "mar"; break;
        case 4: yd = 30; mon = "apr"; break;
        case 5: yd = 30; mon = "jun"; break;
+       case 6: yd = 31; mon = "may"; break;
        case 7: yd = 31; mon = "jul"; break;
        case 8: yd = 31; mon = "aug"; break;
        case 9: yd = 30; mon = "sep"; break;
