@@ -360,7 +360,7 @@ switch(m) {
  if (d==1) 
    { 
      switch(m) { 
-       case 0: yd = 31; mon = "dec"; break;
+       case 0: yd = 31; mon = "dec"; y=y-1; break;
        case 1: yd = 31; mon = "jan"; break;
        case 2: if(y % 4 == 0) { yd = 29;} else { yd = 28;} mon = "feb"; break;
        case 3: yd = 31; mon = "mar"; break;
@@ -372,7 +372,7 @@ switch(m) {
        case 9: yd = 30; mon = "sep"; break;
        case 10: yd = 31; mon = "oct"; break;
        case 11: yd = 30; mon = "nov"; break;
-       default: yd = 31; mon = "dec";}
+       default: yd = 31; mon = "dec"; y=y-1;}
                }
      else { 
      switch(m) { 
